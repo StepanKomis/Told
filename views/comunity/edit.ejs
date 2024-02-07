@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit <%= comunity.name %> | Told</title>
+</head>
+<body>
+    <form action="/comunity/edit/<%= comunity.name %>/name" method="post">
+        <input type="text" name="name" id="name" placeholder="Comunity name">
+        <input type="submit" value="change">
+    </form>
+    <form action="/comunity/edit/<%= comunity.name %>/description" method="post">
+        <input type="text" name="description" id="description" placeholder="Comunity description">
+        <input type="submit" value="change">
+    </form>
+    <form action="/comunity/edit/<%= comunity.name %>/admin" method="post">
+        <input type="text" name="admin" id="admin" placeholder="Comunity admin">
+        <input type="submit" value="change">
+    </form>
+</body>
+</html>

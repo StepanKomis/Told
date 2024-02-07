@@ -1,0 +1,17 @@
+<nav>
+    <div id="navbr-navigation">
+        <a href="/home">
+            Home!
+        </a>
+    </div>
+    <div id="account">
+        <% if (!user.isLoggedIn) {%>
+            <a href="/auth/login">Login</a>
+            <a href="/auth/register">Register!</a>
+        <% } else { %>
+            <a href="/auth/logout">Logout</a>
+            <a href="<%= "/user/" + user.id%>">Account</a>
+        <% } %>
+
+    </div>
+</nav>

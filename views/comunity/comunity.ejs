@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title><%= comunity.name %> | Told</title>
+</head>
+<body>
+    <%- include("../components/navbar.ejs") %>
+    <h1><%= comunity.name %></h1>
+    <h2><%= comunity.admin %></h2>
+    <p><%= comunity.createdAt %></p>
+    <p><%= comunity.description %></p>
+    <% if (comunity.admin = user.id) {%>
+        <a href="edit/<%= comunity.name %>">editProfile</a>
+    <% } %>
+</body>
+</html>

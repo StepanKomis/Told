@@ -1,0 +1,11 @@
+@import url("./variable.css");
+@import url("./navbar.css");
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+.container {
+    width: 100%;
+    height: calc(100vh - var(--navbr-height));
+    overflow: hidden;
+}
