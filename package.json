@@ -1,6 +1,6 @@
 {
   "name": "told",
-  "module": "index.ts",
+  "module": "index.js",
   "type": "module",
   "devDependencies": {
     "nodemon": "^3.0.3",
