@@ -3,7 +3,12 @@
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
+    "nodemon": "^3.0.3",
     "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
